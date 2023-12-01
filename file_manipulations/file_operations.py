@@ -37,7 +37,13 @@ def open_csv_alias_each():
 
 def split_lines():
     with open('MOCK_DATA.csv', 'r') as f:
+        l = 0
         for i in f:
             word = i.split()
             print(word)
+        for j in word:
+            l += len(j)
+        print(l)
+
+split_lines()
 
