@@ -23,6 +23,7 @@ def readFile(file):
 def append(file):
     with open(file, 'a') as f:
         f.write('\nAppending to existing file')
+        print("File has been appended")
         f.close()
 
 
@@ -37,7 +38,6 @@ def delete(new_filename):
 if __name__ == '__main__':
     filename = "all_file_manipulations.txt"
     newfilename = 'all_file_operations.txt'
-
     create_write(filename)
     readFile(filename)
     append(filename)
